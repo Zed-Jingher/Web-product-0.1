@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Cart | StanB Store</title>
+  <meta name="description" content="Review your StanB Store cart and continue to checkout." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="cart">
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">
+        <img class="brand-logo" src="logo.svg" alt="StanB Store logo" />
+      </span>
+      <span>
+        <strong>StanB Store</strong>
+        <small>Computer Accessories Store</small>
+      </span>
+    </a>
+
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Shop</a>
+      <a href="cart.html" class="active">Cart <span class="cart-pill" data-cart-count>0</span></a>
+      <a href="checkout.html">Checkout</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero compact">
+      <span class="eyebrow">Shopping cart</span>
+      <h1>Review your selected accessories.</h1>
+      <p>Adjust quantities, remove items, and continue to checkout when you are ready to complete the order.</p>
+    </section>
+
+    <section class="cart-layout">
+      <div class="cart-panel">
+        <div class="panel-head">
+          <h2>Cart items</h2>
+          <a href="products.html">Continue shopping</a>
+        </div>
+        <div class="cart-list" data-cart-page-items></div>
+      </div>
+
+      <div class="summary-panel">
+        <h2>Order summary</h2>
+        <div class="summary-row"><span>Subtotal</span><strong data-cart-total>$0</strong></div>
+        <div class="summary-row"><span>Shipping</span><strong>Calculated at checkout</strong></div>
+        <div class="summary-row total"><span>Total</span><strong data-cart-total>$0</strong></div>
+        <a class="btn full" href="checkout.html">Proceed to Checkout</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>StanB Store cart is synced across the entire store.</p>
+  </footer>
+
+  <div class="cart-overlay" data-cart-overlay></div>
+  <aside class="cart-drawer" data-cart-drawer>
+    <div class="drawer-head">
+      <h3>Your Cart</h3>
+      <button class="icon-btn" type="button" data-close-cart>Close</button>
+    </div>
+    <div class="drawer-items" data-cart-items></div>
+    <div class="drawer-foot">
+      <div class="drawer-total">
+        <span>Subtotal</span>
+        <strong data-cart-total>$0</strong>
+      </div>
+      <a class="btn" href="checkout.html">Checkout</a>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>

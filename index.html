@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StanB Store | Premium Computer Accessories</title>
+  <meta name="description" content="StanB Store is a premium multi-page store for computer and technology accessories with cart and checkout UI." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="home">
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">
+        <img class="brand-logo" src="logo.svg" alt="StanB Store logo" />
+      </span>
+      <span>
+        <strong>StanB Store</strong>
+        <small>Computer Accessories Store</small>
+      </span>
+    </a>
+
+    <nav class="nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="products.html">Shop</a>
+      <a href="cart.html">Cart <span class="cart-pill" data-cart-count>0</span></a>
+      <a href="checkout.html">Checkout</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" type="button" data-open-cart>
+        Cart <span class="cart-pill" data-cart-count>0</span>
+      </button>
+      <a class="btn btn-small" href="products.html">Browse Store</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-home">
+      <div class="hero-copy">
+        <span class="eyebrow">Premium tech accessories</span>
+        <h1>Sell computer gear with a store that feels premium, fast, and trusted.</h1>
+        <p>
+          A polished shopping experience for keyboards, mice, storage, cables, dongles,
+          webcams, and office-tech essentials that helps customers buy with confidence.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn" href="products.html">Shop Accessories</a>
+          <a class="btn btn-ghost" href="checkout.html">Go to Checkout</a>
+        </div>
+
+        <div class="hero-stats">
+          <div><strong>15+</strong><span>Accessories in stock</span></div>
+          <div><strong>Secure</strong><span>Cart and checkout UI</span></div>
+          <div><strong>Mobile</strong><span>Optimized shopping flow</span></div>
+        </div>
+      </div>
+
+      <div class="hero-panel">
+        <div class="hero-panel-top">
+          <span class="live-dot"></span>
+          <span>Featured workspace setup</span>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1200&q=80"
+          alt="Premium laptop setup with accessories"
+        />
+        <div class="hero-panel-body">
+          <h2>Everything customers need for a complete tech setup</h2>
+          <p>Clear product cards, premium styling, and instant cart actions designed to convert.</p>
+          <div class="price-row">
+            <span class="price">$39</span>
+            <span class="badge">Top Pick</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <span class="eyebrow">Featured products</span>
+        <h2>Popular accessories that fit work, study, and gaming setups.</h2>
+      </div>
+      <div class="product-grid" data-product-list="featured"></div>
+    </section>
+
+    <section class="section split-layout">
+      <div class="section-heading">
+        <span class="eyebrow">Why this store works</span>
+        <h2>Premium UI makes tech products feel more valuable and easier to buy.</h2>
+      </div>
+
+      <div class="benefits-grid">
+        <article class="benefit-card">
+          <h3>Premium presentation</h3>
+          <p>Dark, elegant styling gives your accessories a more advanced and trustworthy look.</p>
+        </article>
+        <article class="benefit-card">
+          <h3>Fast shopping flow</h3>
+          <p>Customers can browse products, add them to cart, and checkout without friction.</p>
+        </article>
+        <article class="benefit-card">
+          <h3>Tech-specific details</h3>
+          <p>We highlight compatibility, ports, and device use cases that matter to buyers.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section testimonials">
+      <div class="section-heading">
+        <span class="eyebrow">Customer reviews</span>
+        <h2>Social proof helps buyers trust your store more quickly.</h2>
+      </div>
+      <div class="review-grid">
+        <article class="review-card">
+          <p>"The store feels high-end and the cart is simple to use."</p>
+          <strong>Ana, Online Shopper</strong>
+        </article>
+        <article class="review-card">
+          <p>"The product layout makes it easy to compare all the accessories."</p>
+          <strong>Mark, Store Owner</strong>
+        </article>
+        <article class="review-card">
+          <p>"Perfect for selling computer accessories on mobile and desktop."</p>
+          <strong>Jasmine, Brand Manager</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="section cta-banner">
+      <div>
+        <span class="eyebrow">Next step</span>
+        <h2>Tell me if you want gaming, office, or laptop-focused branding next.</h2>
+        <p>We can refine the product names, color palette, and checkout flow to match your exact audience.</p>
+      </div>
+      <a class="btn" href="contact.html">Contact Us</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>StanB Store. Built for premium computer and technology accessories.</p>
+  </footer>
+
+  <div class="cart-overlay" data-cart-overlay></div>
+  <aside class="cart-drawer" data-cart-drawer>
+    <div class="drawer-head">
+      <h3>Your Cart</h3>
+      <button class="icon-btn" type="button" data-close-cart>Close</button>
+    </div>
+    <div class="drawer-items" data-cart-items></div>
+    <div class="drawer-foot">
+      <div class="drawer-total">
+        <span>Subtotal</span>
+        <strong data-cart-total>$0</strong>
+      </div>
+      <a class="btn" href="checkout.html">Checkout</a>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>

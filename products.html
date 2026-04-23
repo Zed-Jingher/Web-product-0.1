@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop Products | StanB Store</title>
+  <meta name="description" content="Browse the full StanB Store catalog of computer and technology accessories." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="products">
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">
+        <img class="brand-logo" src="logo.svg" alt="StanB Store logo" />
+      </span>
+      <span>
+        <strong>StanB Store</strong>
+        <small>Computer Accessories Store</small>
+      </span>
+    </a>
+
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="products.html" class="active">Shop</a>
+      <a href="cart.html">Cart <span class="cart-pill" data-cart-count>0</span></a>
+      <a href="checkout.html">Checkout</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" type="button" data-toggle-favorites-only>
+        Favorites <span class="cart-pill" data-fav-count>0</span>
+      </button>
+      <button class="icon-btn" type="button" data-open-cart>
+        Cart <span class="cart-pill" data-cart-count>0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <span class="eyebrow">Full catalog</span>
+      <h1>Shop all computer and technology accessories.</h1>
+      <p>From storage and connection tools to input devices and display cables, this catalog is built to feel premium and easy to buy from.</p>
+    </section>
+
+    <section class="catalog-shell">
+      <aside class="sidebar-filters card">
+        <div class="sidebar-section">
+          <div class="sidebar-title">Sort by</div>
+          <select class="sort-select" data-sort-select>
+            <option value="featured">Popularity</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+          </select>
+        </div>
+
+        <div class="sidebar-section">
+          <div class="sidebar-title">Categories</div>
+          <div class="sidebar-filters-list" data-category-filters></div>
+        </div>
+
+        <div class="sidebar-section">
+          <div class="sidebar-title">Shortcuts</div>
+          <button class="chip chip-wide" type="button" data-toggle-favorites-only>
+            <span>Favorites only</span>
+            <span class="cart-pill" data-fav-count>0</span>
+          </button>
+          <button class="chip chip-wide" type="button" data-reset-filters>Clear all filters</button>
+        </div>
+      </aside>
+
+      <section class="catalog-main">
+        <div class="search-shell card">
+          <div class="search-wrap">
+            <label for="product-search">Search products</label>
+            <div class="search-field">
+              <input id="product-search" type="search" placeholder="Search by name, category, or keyword" data-product-search autocomplete="off" />
+              <div class="search-suggestions" data-search-suggestions></div>
+            </div>
+          </div>
+          <div class="results-note" data-results-note>Showing all products</div>
+        </div>
+
+        <div class="section-heading">
+          <span class="eyebrow">All products</span>
+          <h2>Accessories grouped for faster browsing and better buying decisions.</h2>
+        </div>
+
+        <div class="product-grid product-grid-large" data-product-list="all"></div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Browse more, add to cart, then continue to checkout when you're ready.</p>
+  </footer>
+
+  <div class="cart-overlay" data-cart-overlay></div>
+  <aside class="cart-drawer" data-cart-drawer>
+    <div class="drawer-head">
+      <h3>Your Cart</h3>
+      <button class="icon-btn" type="button" data-close-cart>Close</button>
+    </div>
+    <div class="drawer-items" data-cart-items></div>
+    <div class="drawer-foot">
+      <div class="drawer-total">
+        <span>Subtotal</span>
+        <strong data-cart-total>$0</strong>
+      </div>
+      <a class="btn" href="checkout.html">Checkout</a>
+    </div>
+  </aside>
+
+  <div class="modal-overlay hidden" data-product-modal-backdrop></div>
+  <section class="product-modal hidden" data-product-modal aria-modal="true" role="dialog">
+    <button class="modal-close" type="button" data-close-product-modal>Close</button>
+    <div class="modal-grid">
+      <img class="modal-image" data-modal-image alt="" />
+      <div class="modal-copy">
+        <span class="eyebrow" data-modal-category></span>
+        <h3 data-modal-title></h3>
+        <p data-modal-description></p>
+        <div class="modal-meta">
+          <strong data-modal-price></strong>
+          <span class="badge" data-modal-popularity></span>
+        </div>
+        <div class="modal-actions">
+          <button class="btn btn-ghost" type="button" data-modal-wishlist></button>
+          <button class="btn btn-ghost" type="button" data-modal-cart></button>
+          <button class="btn" type="button" data-modal-close-primary>Continue Shopping</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

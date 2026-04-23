@@ -1,0 +1,36 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">StanB Store neon logo</title>
+  <desc id="desc">A glowing technology-style logo with circuit lines and the letters SB.</desc>
+  <defs>
+    <linearGradient id="g1" x1="40" y1="32" x2="216" y2="224" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6EE7D8"/>
+      <stop offset="0.55" stop-color="#7DD3FC"/>
+      <stop offset="1" stop-color="#D6A85B"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect x="18" y="18" width="220" height="220" rx="54" fill="#09111D" stroke="url(#g1)" stroke-width="4"/>
+  <rect x="34" y="34" width="188" height="188" rx="42" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+
+  <path d="M56 126H92" stroke="url(#g1)" stroke-width="6" stroke-linecap="round" filter="url(#glow)"/>
+  <path d="M164 126H200" stroke="url(#g1)" stroke-width="6" stroke-linecap="round" filter="url(#glow)"/>
+  <path d="M128 56V92" stroke="url(#g1)" stroke-width="6" stroke-linecap="round" filter="url(#glow)"/>
+  <path d="M128 164V200" stroke="url(#g1)" stroke-width="6" stroke-linecap="round" filter="url(#glow)"/>
+  <circle cx="128" cy="128" r="76" stroke="rgba(125,211,252,0.35)" stroke-width="2"/>
+  <circle cx="128" cy="128" r="92" stroke="rgba(110,231,216,0.14)" stroke-width="2" stroke-dasharray="8 10"/>
+
+  <path d="M103 78H138C152 78 162 87 162 100C162 111 153 119 142 121C156 123 166 132 166 146C166 160 155 178 129 178H103V78Z" fill="url(#g1)" filter="url(#glow)"/>
+  <path d="M121 93H131C138 93 142 97 142 103C142 109 138 113 131 113H121V93Z" fill="#09111D"/>
+  <path d="M121 138H136C144 138 149 143 149 150C149 157 144 162 136 162H121V138Z" fill="#09111D"/>
+  <path d="M96 78V178H113V78H96Z" fill="url(#g1)"/>
+
+  <path d="M72 186C82 176 90 172 98 170" stroke="rgba(125,211,252,0.45)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M184 72C174 82 166 86 158 88" stroke="rgba(110,231,216,0.45)" stroke-width="4" stroke-linecap="round"/>
+</svg>

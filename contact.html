@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | StanB Store</title>
+  <meta name="description" content="Contact StanB Store by phone, Telegram, or email." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="contact">
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">
+        <img class="brand-logo" src="logo.svg" alt="StanB Store logo" />
+      </span>
+      <span>
+        <strong>StanB Store</strong>
+        <small>Computer Accessories Store</small>
+      </span>
+    </a>
+
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Shop</a>
+      <a href="cart.html">Cart <span class="cart-pill" data-cart-count>0</span></a>
+      <a href="checkout.html">Checkout</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero compact">
+      <span class="eyebrow">Contact details</span>
+      <h1>Let's talk about your store and product lineup.</h1>
+      <p>Reach out by phone, Telegram, or email if you want changes, support, or a custom version of the shop.</p>
+    </section>
+
+    <section class="contact-grid">
+      <article class="contact-card">
+        <h2>Phone</h2>
+        <p>0715239670</p>
+        <a class="btn btn-ghost full" href="tel:0715239670">Call Now</a>
+      </article>
+
+      <article class="contact-card">
+        <h2>Telegram</h2>
+        <p>@shienshivora</p>
+        <a class="btn full" href="https://t.me/shienshivora" target="_blank" rel="noreferrer">Open Telegram</a>
+      </article>
+
+      <article class="contact-card">
+        <h2>Email</h2>
+        <p>chunsambath071@gmail.com</p>
+        <a class="btn btn-ghost full" href="mailto:chunsambath071@gmail.com">Send Email</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>StanB Store support is ready when you need the next update.</p>
+  </footer>
+
+  <div class="cart-overlay" data-cart-overlay></div>
+  <aside class="cart-drawer" data-cart-drawer>
+    <div class="drawer-head">
+      <h3>Your Cart</h3>
+      <button class="icon-btn" type="button" data-close-cart>Close</button>
+    </div>
+    <div class="drawer-items" data-cart-items></div>
+    <div class="drawer-foot">
+      <div class="drawer-total">
+        <span>Subtotal</span>
+        <strong data-cart-total>$0</strong>
+      </div>
+      <a class="btn" href="checkout.html">Checkout</a>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
